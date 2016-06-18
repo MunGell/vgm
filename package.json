@@ -1,0 +1,26 @@
+{
+  "name": "vgm",
+  "version": "1.0.0",
+  "description": "Vagrant Manager",
+  "bin": {
+    "vgm": "./bin/vgm"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MunGell/vgm.git"
+  },
+  "keywords": [
+    "vagrant",
+    "cli",
+    "manager"
+  ],
+  "author": "Shmavon Gazanchyan <sgazanchyan@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MunGell/vgm/issues"
+  },
+  "homepage": "https://github.com/MunGell/vgm#readme"
+}
