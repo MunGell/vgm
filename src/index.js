@@ -1,10 +1,9 @@
-var program = require('commander'),
-    pkg = require('../package.json');
-
-var listCmd = require('./list'),
-    addCmd = require('./add'),
-    removeCmd = require('./remove'),
-    boxCmd = require('./box');
+const program = require('commander');
+const pkg = require('../package.json');
+const listCmd = require('./list');
+const addCmd = require('./add');
+const removeCmd = require('./remove');
+const boxCmd = require('./box');
 
 module.exports = function () {
     program.version(pkg.version);
@@ -15,7 +14,7 @@ module.exports = function () {
         .action(listCmd);
 
     program
-        .command('add <path> [name]')
+        .command('add <name> <path>')
         .description('add box to vagrant manager (vgm)')
         .action(addCmd);
 

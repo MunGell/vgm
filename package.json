@@ -27,7 +27,12 @@
   "homepage": "https://github.com/MunGell/vgm#readme",
   "dependencies": {
     "chalk": "^1.1.3",
+    "cli-table": "^0.3.1",
     "commander": "^2.9.0",
-    "configstore": "^2.0.0"
+    "configstore": "git+ssh://git@github.com/yeoman/configstore.git",
+    "path-exists": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=4.0.0"
   }
 }
