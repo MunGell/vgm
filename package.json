@@ -2,9 +2,11 @@
   "name": "vgm",
   "version": "1.0.0",
   "description": "Vagrant Manager",
+  "main": "src/index.js",
   "bin": {
     "vgm": "./bin/vgm"
   },
+  "preferGlobal": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,5 +24,10 @@
   "bugs": {
     "url": "https://github.com/MunGell/vgm/issues"
   },
-  "homepage": "https://github.com/MunGell/vgm#readme"
+  "homepage": "https://github.com/MunGell/vgm#readme",
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "commander": "^2.9.0",
+    "configstore": "^2.0.0"
+  }
 }
