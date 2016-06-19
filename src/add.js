@@ -3,7 +3,7 @@ const configstore = require('./configstore');
 const pathUtils = require('./path');
 
 module.exports = function (name, vagrantpath) {
-    vagrantpath = pathUtils.getPathOnly(vagrantpath);
+    vagrantpath = vagrantpath ? pathUtils.getPathOnly(vagrantpath) : pathUtils.getCurrentPath();
 
     if (configstore.has(name)) {
         console.error(chalk.red('Box with name %s is already registered in %s'), name, configstore.get(name));

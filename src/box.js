@@ -2,6 +2,8 @@ const spawn = require('child_process').spawn;
 const configstore = require('./configstore');
 
 module.exports = function (box, cmd) {
+    cmd = cmd || 'status';
+
     process.stdin.pause();
     process.stdin.setRawMode(false);
 

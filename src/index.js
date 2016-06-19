@@ -14,7 +14,7 @@ module.exports = function () {
         .action(listCmd);
 
     program
-        .command('add <name> <path>')
+        .command('add <name> [path]')
         .description('add box to vagrant manager (vgm)')
         .action(addCmd);
 
@@ -31,4 +31,6 @@ module.exports = function () {
         .action(boxCmd);
 
     program.parse(process.argv);
+
+    if (!program.args.length) program.help();
 };

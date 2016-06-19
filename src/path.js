@@ -8,5 +8,8 @@ module.exports = {
     },
     getPathOnly: function (p) {
         return /Vagrantfile$/.test(p) ? p.slice(0, -11) : p
+    },
+    getCurrentPath: function () {
+        return process.cwd();
     }
 };
