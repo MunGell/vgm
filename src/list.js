@@ -5,8 +5,10 @@ module.exports = function () {
     var table = new Table({
         head: ['Name', 'Path']
     });
-    if (configstore.size > 0) {
-        table.push(configstore.all);
+
+    for (var box in configstore.all) {
+        table.push([box, configstore.get(box)]);
     }
+
     console.log(table.toString());
 };
