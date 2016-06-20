@@ -19,14 +19,13 @@ module.exports = function () {
         .action(addCmd);
 
     program
-        .command('remove <box>')
+        .command('remove <name>')
         .alias('rm')
         .description('remove box from vagrant manager (vgm)')
         .action(removeCmd);
 
     program
-        .command('box <box> [cmd]')
-        .alias('b')
+        .command('* <name> [cmd]')
         .description('execute box-related commands')
         .action(boxCmd);
 
