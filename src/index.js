@@ -25,7 +25,7 @@ module.exports = function () {
         .action(removeCmd);
 
     program
-        .command('* <name> [cmd]')
+        .command('* <name> [cmd...]')
         .description('execute box-related commands')
         .action(boxCmd);
 

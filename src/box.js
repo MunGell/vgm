@@ -2,7 +2,7 @@ const spawn = require('child_process').spawn;
 const configstore = require('./configstore');
 
 module.exports = function (name, cmd) {
-    cmd = cmd || 'status';
+    cmd = cmd.length ? cmd : ['status'];
 
     process.stdin.pause();
 
@@ -14,7 +14,7 @@ module.exports = function (name, cmd) {
             "cwd": configstore.get(name),
             'stdio': 'inherit'
         },
-        proc = spawn('vagrant', [cmd], options);
+        proc = spawn('vagrant', cmd, options);
 
     return proc.on('exit', function () {
         if (process.stdin.isTTY) {
