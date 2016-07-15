@@ -1,6 +1,6 @@
 {
   "name": "vgm",
-  "version": "0.0.6",
+  "version": "1.0.0",
   "description": "Vagrant Manager",
   "main": "src/index.js",
   "bin": {
