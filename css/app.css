@@ -1,0 +1,101 @@
+body {
+    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    background-color: #362d6c;
+    background-image: -ms-linear-gradient(45deg, #362d6c 0%, #0c5593 100%);
+    background-image: linear-gradient(45deg, #362d6c 0%, #0c5593 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#362d6c', endColorstr='#0c5593', GradientType=1);
+    background-position: center 0;
+    background-repeat: no-repeat
+}
+
+body a {
+    color: #fff;
+}
+
+#header {
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+}
+
+#hero {
+    position: relative;
+    min-height: calc(100vh - 2.5rem);
+    padding: 5rem;
+    color: #fff;
+
+}
+
+#footer {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-top: 1px solid #8d9ba8;
+}
+
+#footer svg {
+    height: 100px;
+    margin: 50px;
+}
+
+.content {
+    background-color: #fff;
+    color: #270836;
+    padding: 5rem;
+    border-top: 1px solid #8d9ba8;
+    min-height: 100vh;
+}
+
+.content pre {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.button {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    background-color: #48b4fb;
+    display: flex;
+    padding: 15px 0;
+    margin-top: 20px !important;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 25px;
+    letter-spacing: 5px;
+    font-family: "museo-sans", helvetica, arial, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.button:hover {
+    cursor: pointer;
+    transition: color .2s ease-in-out;
+    text-decoration: none;
+}
+
+.button svg {
+    position: absolute;
+    right: 30px;
+    top: 25px;
+    height: 16px;
+    fill: #fff;
+}
+
+.notes {
+    padding: 3rem;
+}
+
+pre {
+    color: #fff;
+    font-size: 20px;
+    padding: 40px 40px 10px 40px;
+    margin: 40px auto;
+    background: rgba(0, 0, 0, 0.6);
+    font-weight: normal;
+    font-family: "Courier New", monospace;
+    border: none;
+    line-height: 1.42857;
+    word-break: break-all;
+    word-wrap: break-word;
+    border-radius: 4px;
+}
